@@ -86,4 +86,6 @@ Copied _ViewImport and _ViewStart to Customer Area and added new path -  Layout 
 1151
 Added the proper view files like above folder and delete the Data and Models folder
 1152
-Deleted the Controllers folder and commit all the code to github
+commit all the code to github
+1155
+Forgot to delete the controller folder delete it and comment the - options => options.SignIn.RequireConfirmedAccount = true on line 35 and commit it 
