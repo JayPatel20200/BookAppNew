@@ -1,4 +1,5 @@
 ﻿2023-10-24
+
 1502
 Created a new project with authentication to be individual accounts and tested the application.
 1505
@@ -7,7 +8,9 @@ Added the README.md file and edit the content of it.
 Relaunch the project and added the test registeration account with email id j@j.com.
 1525
 Drop the whole project and restarted because forgot to enable the razor runtime compilation and go through whole once again and this time it is making changes (./Views/Shared/_Layout.cshtml).
+
 2023-10-27
+
 1432
 resumed from where i left.
 1437
@@ -41,10 +44,46 @@ Added the Dropdown code
 </li>". But ran into problem that when i clicked on the Content management it didn't open the drop down menu
 1546
 Tried to solve it but didn't find the solution and give up push all the changes to github.
+
 2023-10-31
+
 1023
 Cloned the project and try to re-run it but giving me error of localhost {port} doesn't avaiable.
 1025
 Dropped the whole project and tried again.
 1111
-Reached at the same point. 
+Reached at the same point.
+1118
+Started creating all three project as follows - BookApp.DataAccess, BookApp.Models and BookApp.Utility
+1121
+Moved the data folder from main to DataAccess folder
+1123
+Deleted the Migration folder in data folder and install Microsoft.EntityFramework.Relational and sql server from Nuget Package manager.
+1125
+Modified the namespace in ApplicationDbContext.cs and deleted all Class1.cs in new project.
+1127
+Moved the Models folder to Models project and add project reference to .DataAccess and .Models 
+1129
+Renamed the models folder to ViewModels and Build the project but gave me error in Startup.cs 
+1131
+There was error ApplicationDbContext on line 37, hover on the error and clicked on lightbulb and added this - using BookAppNew.DataAccess.Data; and removed using data line;
+1134
+Correct the default reference of Error.cshtml and new one is BookAppNew.Models.ViewModels.ErrorViewModel and try run the project but again an error
+1136 
+Error was in HomeController.cs where type or namespace for error model not found, did the same thing hover and clicked on bulb and added - using BookAppNew.Models.ViewModels;
+1139
+Added new SD.cs class in Utility  and modify the class property
+1140
+Added the project reference
+1142
+Added "Customer" area in Area folder and changed the startup.cs route -  pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
+1145
+Edited the HomeController.cs to explicitly define that the controller is in the Customer Area
+1147
+Moved Views > Home and modify the HomeController namespace
+1149
+Copied _ViewImport and _ViewStart to Customer Area and added new path -  Layout = "~/Views/Shared/_Layout.cshtml";
+1151
+Added the proper view files like above folder and delete the Data and Models folder
+1152
+Deleted the Controllers folder and commit all the code to github
