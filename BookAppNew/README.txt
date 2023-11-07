@@ -107,3 +107,5 @@ Created new class and interface file as categoryRepository
 Created ISP_Call.cs and installed the Dapper package and push to git hub
 2017
 Created new UnitOfWork and its interface file 
+2019
+ services.AddScoped<IUnitOfWork, UnitOfWork>(); this to startup.cs

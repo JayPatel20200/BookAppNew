@@ -1,3 +1,5 @@
+using BookApp.DataAccess.Repository;
+using BookApp.DataAccess.Repository.IRepository;
 using BookAppNew.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +36,7 @@ namespace BookAppNew
 
             services.AddDefaultIdentity<IdentityUser>(/*options => options.SignIn.RequireConfirmedAccount = true*/)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
