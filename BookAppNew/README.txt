@@ -89,3 +89,13 @@ Added the proper view files like above folder and delete the Data and Models fol
 commit all the code to github
 1155
 Forgot to delete the controller folder delete it and comment the - options => options.SignIn.RequireConfirmedAccount = true on line 35 and commit it 
+
+2023-11-06
+1953
+Cloned the project and changed the project appsetting.json = "Server=(localdb)\\mssqllocaldb;Database=BookAppNew;Trusted_Connection=True;MultipleActiveResultSets=true"
+1956
+add the first migration - 20231107005626_AddDefaultIdentify
+2001
+added second migration - 20231107010052_AddCategoryToDb but it was empty 
+2003
+the migration where all the things added - 20231107010259_updatedMigration
