@@ -121,3 +121,7 @@ Created new UnitOfWork and its interface file
  Added both partial view named _EditAndBackToListButton and _CreateAndBackToListButton
  2040
  Added the asp-action to the Index.cshtml page and ran the application
+ 2042
+ Modified CategoryController.cs
+ 2044
+ Added the Delete functions in category.js and run the application
