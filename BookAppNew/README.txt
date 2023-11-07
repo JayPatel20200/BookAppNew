@@ -109,3 +109,5 @@ Created ISP_Call.cs and installed the Dapper package and push to git hub
 Created new UnitOfWork and its interface file 
 2019
  services.AddScoped<IUnitOfWork, UnitOfWork>(); this to startup.cs
+ 2024
+ added the new CategoryController.cs in area admin folder and modified the code according to slide

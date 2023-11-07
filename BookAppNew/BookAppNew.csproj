@@ -7,9 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Admin\Data\**" />
+    <Compile Remove="Areas\Admin\Models\**" />
     <Compile Remove="Controllers\**" />
+    <Content Remove="Areas\Admin\Data\**" />
+    <Content Remove="Areas\Admin\Models\**" />
     <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Areas\Admin\Data\**" />
+    <EmbeddedResource Remove="Areas\Admin\Models\**" />
     <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Areas\Admin\Data\**" />
+    <None Remove="Areas\Admin\Models\**" />
     <None Remove="Controllers\**" />
   </ItemGroup>
 
@@ -27,13 +35,6 @@
     <ProjectReference Include="..\BookApp.DataAccess\BookApp.DataAccess.csproj" />
     <ProjectReference Include="..\BookApp.Models\BookApp.Models.csproj" />
     <ProjectReference Include="..\BookApp.Utility\BookApp.Utility.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\" />
   </ItemGroup>
 
 </Project>
