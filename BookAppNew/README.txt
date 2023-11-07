@@ -111,3 +111,5 @@ Created new UnitOfWork and its interface file
  services.AddScoped<IUnitOfWork, UnitOfWork>(); this to startup.cs
  2024
  added the new CategoryController.cs in area admin folder and modified the code according to slide
+ 2027
+ Created new Index.cshtml file and added code that you provided
