@@ -117,3 +117,7 @@ Created new UnitOfWork and its interface file
  Added the drop down and javascript file from the BlackBoard
  2034
  Created new upsert.cshtml and modified the code according to the blackborad code.
+ 2036
+ Added both partial view named _EditAndBackToListButton and _CreateAndBackToListButton
+ 2040
+ Added the asp-action to the Index.cshtml page and ran the application
