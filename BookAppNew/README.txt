@@ -125,4 +125,4 @@ Created new UnitOfWork and its interface file
  Modified CategoryController.cs
  2044
  Added the Delete functions in category.js and run the application
- created new application with necessary output
+ created new application with necessary outputslkdjflksdjflksadjjfds
